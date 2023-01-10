@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,19 @@
     <title>Mjaltë</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    
-    <script src="script.js" defer></script>
 </head>
 
-
-<body>
-    
+<body id="b1">
     <section id="header">
         <a href="#"><img src="img/logo.png" class="logo" alt="" width="50px" height="50px"></a>
         <div>
             <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop1.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><a class="active" href="login.html">Log In</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </div>
@@ -32,32 +29,30 @@
             <i id="bar" class="fas fa-outdent" onclick="activate()"></i>
         </div>
     </section>
-    <form action="index.html" method="post" onsubmit="return validateloginform()">
-        <label>
-            <h4>Username</h4>
-        </label>
-        <input type="text" id="username">
-        <label>
-            <h4>Password</h4>
-        </label>
-        <input type="password" id="password">
-        <input type="submit" value="Login">
-        <br>
-        <a href="register.html">Ju nuk keni nje llogari?</a>
-    </form>
-    <section id="newsletter" class="section-p1 section-m1" >
-        <div class="newstext">
-            <h4>Sing Up per informata te reja</h4>
-            <p>Merrni E-mail lajme lidhur me produkte te reja dhe <span>oferta .</span></p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email addres">
-            <button class="normal">Sing Up</button>
+
+    <section id="page-headerr">
+        <div class="container-log">
+            <form id="form-log" action="index.html" method="post" onsubmit="return validateloginform()">
+                <h1>Kyqu</h1>
+                <div class="input-control-log">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control-log">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password">
+                    <div class="error"></div>
+                </div>
+            <button type="submit">Log In</button>
+            <p>Nuk keni llogari ? <a href="signup.html">Sing Up</a>
+            </form>
         </div>
     </section>
-    
+    <hr>
 
     <footer class="section-p1">
+     
         <div class="col">
             <img class="logo" src="img/logo.png" alt="" width="50px" height="50px">
             <h4>Contact</h4>
@@ -74,20 +69,20 @@
                 </div>
             </div>
         </div>
-
+      
         <div class="col">
             <h4>About</h4>
-            <a href="#">About Us</a>
+            <a href="about.html">About Us</a>
             <a href="#">Informacione rreth blerjes</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
-
+       
         <div class="col">
             <h4>My Account</h4>
-                <a href="#">Sing in</a>
-                <a href="#">View Cart</a>
+                <a href="signup.html">Sign in</a>
+                <a href="cart.html">View Cart</a>
                 <a href="#">My Wishlist</a>
                 <a href="#">Track My Order</a>
                 <a href="#">Help</a>
@@ -97,5 +92,7 @@
             <p>@ 2023, Tech2 etx - HTML CSS Ecommerce Template</p>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
 </body> 
 </html>

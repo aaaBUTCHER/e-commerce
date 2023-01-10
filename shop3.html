@@ -16,10 +16,11 @@
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a class="active" href="shop1.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Log In</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </div>
@@ -28,53 +29,18 @@
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
-    
-    <section id="prodetail" class="section-p1">
-        <div class="single-pro-image">
-            <img src="img/ash.png" width="100%" id="MainImg" alt="">
-            <div class="small-image-group">
-                <div class="small-img-col">
-                    <img src="img/ash.png" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/logo - Copy.png" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/ash.png" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/ash.png" width="100%" class="small-img" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="single-pro-details">
-            <h4>Mjaltë nga Alpet Shqiptare</h4>
-            <h2>$10</h2>
-            <select>
-                <option>Select Size</option>
-                <option>3L</option>
-                <option>5L</option>
-                <option>15L</option>
-            </select>
-            <input tupe="number" value="1">
-            <button class="normal">Shto ne Shporte</button>
-            <h4>Detajet e Produktit</h4>
-            <span>Duhet me shkru idqka sa me dit ka pe noj edit tekstin
-            ani qysh jeni ju a jeni mir qysh po kaloni. me msime 
-            qysh i keni punt a po msoni; mir mir ; bravo qashtu duhet me msu; 
-            jo me nejt tan diten tu lu aty more depsuz ;; u bo nervoz gjyshi;
-            gjyshi nxori alltin !!!! ikni se naj kajti copen
-            --ngjarja perfundon me tragjedi
-            </span>
-        </div>
-
-    </section>
 
     <section id="product" class="section-p1">
-        <h4>\ produktet tjera ne dizpozicion /</h4>
-    
         <div class="pro-container">
+
+            <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src="img/ash.png" alt="" >
+                <div class="des">
+                    <h5>Mjaltë nga Alpet Shqiptare</h5>
+                    <h4>10 $</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
             <div class="pro">
                 <img src="img/rd.png" alt="" >
                 <div class="des">
@@ -92,14 +58,38 @@
                 <a href="#"><i class="fa fa-shopping-cart cart" class></i></a>
             </div>
             <div class="pro">
-                <img src="img/logo.png" alt="" >
+                <img src="img/ash.png" alt="" >
                 <div class="des">
-                    <h5>Lug Mjalti</h5>
+                    <h5>Mjaltë nga Alpet Shqiptare</h5>
+                    <h4>10 $</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/rd.png" alt="" >
+                <div class="des">
+                    <h5>Mjaltë nga Rrafshi Dukagjini</h5>
+                    <h4>10 $</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/rk.png" alt="" >
+                <div class="des">
+                    <h5>Mjaltë nga Rrafshi Kosoves</h5>
                     <h4>10 $</h4>
                 </div>
                 <a href="#"><i class="fa fa-shopping-cart cart" class></i></a>
             </div>
+            
         </div>
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="shop1.html">1</a>
+        <a href="shop2.html">2</a>
+        <a href="#">3</a>
     </section>
 
     <section id="newsletter" class="section-p1 section-m1" >
@@ -154,27 +144,6 @@
             <p>@ 2023, Tech2 etx - HTML CSS Ecommerce Template</p>
         </div>
     </footer>
-
-    <script>
-        var MainImg = document.getElementById("MainImg");
-        var smallimg = document.getElementsByClassName("small-img");
-
-        smalllimg[0].onclick = function(){
-            MainImg.src = smallimg[0].src;
-        }
-
-        smalllimg[1].onclick = function(){
-            MainImg.src = smallimg[1].src;
-        }
-
-        smalllimg[2].onclick = function(){
-            MainImg.src = smallimg[2].src;
-        }
-
-        smalllimg[3].onclick = function(){
-            MainImg.src = smallimg[3].src;
-        }
-    </script>
 
     <script src="script.js" defer></script>
 </body> 

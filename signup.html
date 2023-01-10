@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 
-<body>
-    
+
+<body id="b1">
+
     <section id="header">
         <a href="#"><img src="img/logo.png" class="logo" alt="" width="50px" height="50px"></a>
         <div>
             <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="shop1.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><a class="active" href="login.html">Log In</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </div>
@@ -30,86 +32,37 @@
         </div>
     </section>
 
-    <section id="hero">
-        <h4>Ofertë</h4>
-        <h2>Qmime te mira</h2>
-        <h1>Ne te gjitha produktet</h1>
-        <p>Kurse më shum me cupona & deri ne 20% zbritje!</p>
-        <button>Blej Tani</button>
-    </section>
-
-    <section id="feature" class="section-p1">
-
-        <div class="fe-box">
-            <img src="img/features.png" alt="" >
-            <h6>Blej Online</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features.png" alt="" >
-            <h6>Blej Online</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features.png" alt="" >
-            <h6>Blej Online</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features.png" alt="" >
-            <h6>Blej Online</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features.png" alt="" >
-            <h6>Blej Online</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features.png" alt="" >
-            <h6>Blej Online</h6>
-        </div>
-
-    </section>
-
-    <section id="product" class="section-p1">
-        <h2>Produktet ne Dizpozicion</h2>
-
-        <div class="pro-container">
-            <div class="pro">
-                <img src="img/ash.png" alt="" >
-                <div class="des">
-                    <h5>Mjaltë nga Alpet Shqiptare</h5>
-                    <h4>10 $</h4>
+    <section id="page-headerr">
+        <div class="container-log">
+            <form id="form-log" action="index.html" method="post" onsubmit="return validatesigninform()">
+                <h1>Regjistrohu</h1>
+                <div class="input-control-log">
+                    <label for="username">Username</label>
+                    <input id="username1" name="username" type="text">
+                    <div class="error"></div>
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-        
-            <div class="pro">
-                <img src="img/rd.png" alt="" >
-                <div class="des">
-                    <h5>Mjaltë nga Rrafshi Dukagjini</h5>
-                    <h4>10 $</h4>
+                <div class="input-control-log">
+                    <label for="email">Email</label>
+                    <input id="email1" name="username" type="text">
+                    <div class="error"></div>
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="img/rk.png" alt="" >
-                <div class="des">
-                    <h5>Mjaltë nga Rrafshi Kosoves</h5>
-                    <h4>10 $</h4>
+                <div class="input-control-log">
+                    <label for="password">Password</label>
+                    <input id="password1a" name="password" type="password">
+                    <div class="error"></div>
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart cart" class></i></a>
-            </div>
+                <div class="input-control-log">
+                    <label for="password">Password</label>
+                    <input id="password1b" name="password2" type="password">
+                    <div class="error"></div>
+                </div> 
+                    <button type="submit">Sign Up</button>
+                <br>
+                <p>Ju tashme veqse keni nje llogari ? <a href="login.html">Log In</a>
+            </form>
         </div>
     </section>
-
-    <section id="newsletter" class="section-p1 section-m1" >
-        <div class="newstext">
-            <h4>Sing Up per informata te reja</h4>
-            <p>Merrni E-mail lajme lidhur me produkte te reja dhe <span>oferta .</span></p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email addres">
-            <button class="normal">Sing Up</button>
-        </div>
-    </section>
+    <hr>
 
     <footer class="section-p1">
      
@@ -141,7 +94,7 @@
        
         <div class="col">
             <h4>My Account</h4>
-                <a href="signup.html">Sign in</a>
+                <a href="signin.html">Sign in</a>
                 <a href="cart.html">View Cart</a>
                 <a href="#">My Wishlist</a>
                 <a href="#">Track My Order</a>
