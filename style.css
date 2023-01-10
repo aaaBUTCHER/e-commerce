@@ -137,61 +137,20 @@ body {
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
-
 }
 
-#feature {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 100px;
-}
-
-#feature .fe-box{
-    width: 180px;
+#video-home{
     text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.05);
-    border: 1px solid #cce7d0;
-    border-radius: 40px 40px 3px 40px;
-    margin: 15px 0;
+    
 }
-
-#feature .fe-box:hover{
-    box-shadow: 20px 20px 54px rgba(0, 0, 0, 0.2);
-}
-
-#feature .fe-box img{
+#video-home .videoHome{
     width: 100%;
     height: 100%;
-    margin-bottom: 10px;
 }
-
-#feature .fe-box h6{
-    display: inline-block;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 6px;
-    color: #088178;
-    background-color: #ffc267;
+#video-home .videoHome video{
+    width: 100%;
+    height: 100%;
 }
-
-#feature .fe-box:nth-child(2) h6{
-    background-color: #5e5344;
-}
-#feature .fe-box:nth-child(3) h6{
-    background-color: #bdff67;
-}
-#feature .fe-box:nth-child(4) h6{
-    background-color: #fa67ff;
-}
-#feature .fe-box:nth-child(5) h6{
-    background-color: #67f5ff;
-}
-#feature .fe-box:nth-child(6) h6{
-    background-color: #691717;
-}   
 
 #product {
     text-align: center;
@@ -201,7 +160,6 @@ body {
 
 #product .pro-container{
     display: flex;
-    justify-content: space-between;
     padding-top: 50px;
     flex-wrap: wrap;
 }
@@ -214,12 +172,16 @@ body {
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
-    margin: 15px 0;
+    margin: 1rem;
     position: relative;
+
 }
 
 #product .pro:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+    transform: scale(1.01);
+    border-radius: 40px;
+    transition: 400ms ease;
 }
 
 #product .pro img{
@@ -938,6 +900,10 @@ footer .copyright {
     display: inline-block;
     font-size: 16px;
     border-radius: 4px;
+}
+
+.normal{
+    cursor: pointer;
 }
 
 #card-add{
